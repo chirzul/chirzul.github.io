@@ -194,13 +194,13 @@ span.menu-icon {
 }
 
 .coffee {
+  display: inline-block;
   flex: auto;
   width: 20%;
   padding: 1px;
   width: 40;
   height: 40;
-  margin-left: 1px;
-  margin-right: 1px;
+  margin: 10px;
   position: relative;
 }
 

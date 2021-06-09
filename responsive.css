@@ -7,6 +7,10 @@
   .heading h2 {
     font-size: 20px;
   }
+
+  .coffee {
+    width: 40%;
+  }
 }
 
 /* For Smartphones */
@@ -36,5 +40,14 @@
 
   footer {
     text-align: center;
+  }
+
+  #products {
+    font-size: 32px;
+    margin-bottom: 50px;
+  }
+
+  .coffee {
+    width: 70%;
   }
 }
