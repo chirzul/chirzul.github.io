@@ -73,9 +73,6 @@ a {
   margin: 10px 0;
 }
 
-.learn-more {
-  background-color: #c5a880;
-}
 
 .btn {
   padding: 12px 24px;
@@ -84,6 +81,15 @@ a {
   opacity: 0.9;
   border-radius: 4px;
   text-align: center;
+  background-color: #c5a880;
+  cursor: pointer;
+  box-shadow: 0 7px #532e1c;
+}
+
+.btn:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
 }
 
 .btn:hover {
@@ -185,6 +191,8 @@ span.menu-icon {
 }
 
 .coffee-wrapper {
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e6e6e6;
   float: left;
   display: flex;
   flex-wrap: wrap;
