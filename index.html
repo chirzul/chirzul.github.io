@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Chirzul Maula | Backend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">&lt;CM/&gt;</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Highlights</a></li>
+                <li><a href="#certifications" class="nav-link" data-section="certifications">Certs</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="code-rain" id="codeRain"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I am</p>
+                <h1 class="hero-name">Muhammad Chirzul<br><span class="hero-name-accent">Maula</span></h1>
+                <div class="hero-title-wrapper">
+                    <span class="hero-prefix">&gt;&gt;</span>
+                    <h2 class="hero-title" id="typedText"></h2>
+                    <span class="hero-cursor">|</span>
+                </div>
+                <p class="hero-desc">
+                    Backend developer with 3+ years of experience building scalable systems
+                    for enterprise banking and fintech platforms using <span class="highlight">Go</span>,
+                    <span class="highlight">microservices</span>, and <span class="highlight">cloud-native</span> architectures.
+                </p>
+                <div class="hero-cta">
+                    <a href="#experience" class="btn btn-primary">
+                        <i class="fas fa-code"></i> View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i> Get In Touch
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="6">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="7">0</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-frame">
+                    <div class="profile-ring"></div>
+                    <img src="profile.jpeg" alt="Muhammad Chirzul Maula" class="profile-img"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="profile-fallback" style="display:none">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="about-lead">
+                        I am a passionate <span class="highlight">Backend Developer</span> based in Jakarta, Indonesia,
+                        specializing in building robust, scalable, and high-performance backend systems.
+                    </p>
+                    <p>
+                        With over 3 years of professional experience in the fintech and banking industry,
+                        I have had the privilege of working on enterprise-grade platforms at
+                        <span class="highlight">Bank BRI</span> and <span class="highlight">OCBC Indonesia</span>,
+                        where I designed and implemented microservices architectures, RESTful APIs, gRPC services,
+                        and GraphQL endpoints that serve millions of users.
+                    </p>
+                    <p>
+                        I am deeply passionate about writing <span class="highlight">clean, testable code</span>
+                        and following Go best practices. I thrive in Agile environments where collaboration,
+                        code quality, and continuous delivery are paramount.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Jakarta, Indonesia</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Computer Science (S.Kom)</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-language"></i>
+                            <span>Indonesian (Native) / English (B1)</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Open to Opportunities</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-terminal">
+                    <div class="terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="terminal-title">chirzul@dev:~</span>
+                        </div>
+                        <div class="terminal-body">
+                            <p><span class="t-prompt">$</span> <span class="t-cmd">cat</span> about.json</p>
+<pre class="t-output">{
+  <span class="t-key">"name"</span>: <span class="t-str">"Muhammad Chirzul Maula"</span>,
+  <span class="t-key">"role"</span>: <span class="t-str">"Backend Developer"</span>,
+  <span class="t-key">"location"</span>: <span class="t-str">"Jakarta, Indonesia"</span>,
+  <span class="t-key">"education"</span>: {
+    <span class="t-key">"university"</span>: <span class="t-str">"Universitas Diponegoro"</span>,
+    <span class="t-key">"degree"</span>: <span class="t-str">"Bachelor of Computer Science"</span>,
+    <span class="t-key">"gpa"</span>: <span class="t-num">3.06</span>
+  },
+  <span class="t-key">"primary_lang"</span>: <span class="t-str">"Go (Golang)"</span>,
+  <span class="t-key">"passion"</span>: <span class="t-str">"Scalable Systems"</span>,
+  <span class="t-key">"status"</span>: <span class="t-str">"Building stuff"</span>
+}</pre>
+                            <p><span class="t-prompt">$</span> <span class="t-cmd">echo</span> $MOTTO</p>
+                            <p class="t-output t-highlight">"Write clean code. Ship reliable systems."</p>
+                            <p><span class="t-prompt">$</span> <span class="t-cursor-blink">_</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-card-icon"><i class="fas fa-code"></i></div>
+                    <h3 class="skill-card-title">Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag primary">Go (Golang)</span>
+                        <span class="skill-tag">JavaScript (NodeJS)</span>
+                        <span class="skill-tag">PHP</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3 class="skill-card-title">Frameworks and Libraries</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag primary">Gin</span>
+                        <span class="skill-tag primary">Echo</span>
+                        <span class="skill-tag">gRPC</span>
+                        <span class="skill-tag">GraphQL</span>
+                        <span class="skill-tag">REST</span>
+                        <span class="skill-tag">Gorilla Mux</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card-icon"><i class="fas fa-database"></i></div>
+                    <h3 class="skill-card-title">Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag primary">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Redis</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card-icon"><i class="fas fa-envelope-open-text"></i></div>
+                    <h3 class="skill-card-title">Messaging and Streaming</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag primary">Kafka</span>
+                        <span class="skill-tag primary">RabbitMQ</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card-icon"><i class="fas fa-cloud"></i></div>
+                    <h3 class="skill-card-title">DevOps and Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag primary">Docker</span>
+                        <span class="skill-tag primary">Kubernetes</span>
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">Rundeck</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card-icon"><i class="fas fa-users-cog"></i></div>
+                    <h3 class="skill-card-title">Version Control and Collaboration</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitLab</span>
+                        <span class="skill-tag">Bitbucket</span>
+                        <span class="skill-tag">Jira</span>
+                        <span class="skill-tag">Confluence</span>
+                    </div>
+                </div>
+            </div>
+            <div class="expertise-section">
+                <h3 class="expertise-title">Core Expertise</h3>
+                <div class="expertise-bars">
+                    <div class="expertise-item">
+                        <div class="expertise-label"><span>Go (Golang)</span><span>95%</span></div>
+                        <div class="expertise-bar"><div class="expertise-fill" data-width="95"></div></div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-label"><span>Microservices and gRPC</span><span>90%</span></div>
+                        <div class="expertise-bar"><div class="expertise-fill" data-width="90"></div></div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-label"><span>PostgreSQL and SQL</span><span>88%</span></div>
+                        <div class="expertise-bar"><div class="expertise-fill" data-width="88"></div></div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-label"><span>REST and GraphQL APIs</span><span>87%</span></div>
+                        <div class="expertise-bar"><div class="expertise-fill" data-width="87"></div></div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-label"><span>Unit Testing and TDD</span><span>85%</span></div>
+                        <div class="expertise-bar"><div class="expertise-fill" data-width="85"></div></div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-label"><span>Docker and Kubernetes</span><span>82%</span></div>
+                        <div class="expertise-bar"><div class="expertise-fill" data-width="82"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;experience&gt;</span>
+                <h2 class="section-title">Work Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-company">PT. Bank Rakyat Indonesia (Persero) Tbk.</h3>
+                                <span class="timeline-role">Backend Developer</span>
+                            </div>
+                            <span class="timeline-date"><i class="far fa-calendar-alt"></i> Dec 2022 - May 2024 &amp; Jun 2025 - Present</span>
+                        </div>
+                        <div class="timeline-projects">
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <i class="fas fa-mobile-alt project-icon"></i>
+                                    <h4>SenyuM Mobile</h4>
+                                </div>
+                                <p class="project-desc">Digital application by Ultra Micro Holding (BRI, Pegadaian, PNM) for ultra-micro entrepreneurs, supporting marketing agents and BRILink agents.</p>
+                                <ul class="project-highlights">
+                                    <li>Developed and maintained SenyuM API using Golang for sales and end-user features</li>
+                                    <li>Designed scalable RESTful APIs and gRPC services for business logic and data processing</li>
+                                    <li>Conducted code reviews and maintained clean, well-documented codebases using Go best practices</li>
+                                    <li>Participated in sprint planning and daily stand-ups in a Scrum-based team</li>
+                                </ul>
+                                <div class="project-stack">
+                                    <span>Golang</span><span>gRPC</span><span>Gin</span><span>Echo</span><span>PostgreSQL</span><span>Kafka</span><span>Redis</span><span>Docker</span>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <i class="fas fa-project-diagram project-icon"></i>
+                                    <h4>New Delivery System (NDS)</h4>
+                                </div>
+                                <p class="project-desc">Strategic modernization under BRIvolution 2.0, unifying BRI digital infrastructure and delivery platforms onto a modern middleware.</p>
+                                <ul class="project-highlights">
+                                    <li>Built and maintained multiple backend services in Golang, especially in loan services</li>
+                                    <li>Designed scalable gRPC services for business logic and data processing</li>
+                                    <li>Wrote unit tests with Go testing and Testify, achieving over 85% test coverage</li>
+                                    <li>Collaborated with frontend, QA, compliance, and product teams in Agile sprints</li>
+                                </ul>
+                                <div class="project-stack">
+                                    <span>Golang</span><span>gRPC</span><span>MySQL</span><span>RabbitMQ</span><span>Redis</span><span>Docker</span>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <i class="fas fa-university project-icon"></i>
+                                    <h4>QLola Cash Management</h4>
+                                </div>
+                                <p class="project-desc">BRI Integrated Corporate Solution Platform for business clients with real-time financial insights and transactions.</p>
+                                <ul class="project-highlights">
+                                    <li>Developed and maintained Golang microservices powering Cash Management module</li>
+                                    <li>Optimized and refactored existing code to improve performance and scalability</li>
+                                    <li>Wrote comprehensive documentation for backend services and APIs</li>
+                                    <li>Collaborated with cross-functional teams to deliver high-quality solutions</li>
+                                </ul>
+                                <div class="project-stack">
+                                    <span>Golang</span><span>Gin</span><span>PostgreSQL</span><span>RabbitMQ</span><span>Redis</span><span>Docker</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-company">OCBC Indonesia (Bank OCBC NISP)</h3>
+                                <span class="timeline-role">Backend Developer</span>
+                            </div>
+                            <span class="timeline-date"><i class="far fa-calendar-alt"></i> Jun 2024 - Jun 2025</span>
+                        </div>
+                        <div class="timeline-projects">
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <i class="fas fa-user-plus project-icon"></i>
+                                    <h4>Web OnBoarding</h4>
+                                </div>
+                                <p class="project-desc">OCBC digital onboarding platform for fully online account creation with e-KYC verification for retail and business customers.</p>
+                                <ul class="project-highlights">
+                                    <li>Built and integrated GraphQL endpoints for registration, document upload, and e-KYC workflows</li>
+                                    <li>Integrated e-KYC, IKD (Digital ID), and biometric verification via Dukcapil APIs</li>
+                                    <li>Implemented robust data validation and error handling across onboarding flows</li>
+                                    <li>Optimized PostgreSQL queries for fast customer data processing and identity verification</li>
+                                </ul>
+                                <div class="project-stack">
+                                    <span>Golang</span><span>GraphQL</span><span>PostgreSQL</span><span>Sqlc</span><span>Docker</span>
+                                </div>
+                            </div>
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <i class="fas fa-calculator project-icon"></i>
+                                    <h4>OneSIM</h4>
+                                </div>
+                                <p class="project-desc">Internal centralized financial calculator engine for mutual funds, deposits, loans, and FX instruments.</p>
+                                <ul class="project-highlights">
+                                    <li>Developed core backend services in Golang for financial simulations across product ecosystem</li>
+                                    <li>Implemented secure RESTful APIs for calculation services consumed by other teams</li>
+                                    <li>Created comprehensive API documentation using Swagger (OpenAPI)</li>
+                                    <li>Wrote unit tests to ensure accuracy of financial results and prevent miscalculations</li>
+                                </ul>
+                                <div class="project-stack">
+                                    <span>Golang</span><span>Gin</span><span>PostgreSQL</span><span>Swagger</span><span>Docker</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-company">Kejaksaan Negeri Purwokerto</h3>
+                                <span class="timeline-role">Web Developer</span>
+                            </div>
+                            <span class="timeline-date"><i class="far fa-calendar-alt"></i> Apr 2022 - May 2022</span>
+                        </div>
+                        <div class="timeline-projects">
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <i class="fas fa-globe project-icon"></i>
+                                    <h4>Official Website</h4>
+                                </div>
+                                <p class="project-desc">Official website providing legal information, public reports, confidential complaint system, and institutional profiles.</p>
+                                <ul class="project-highlights">
+                                    <li>Developed the website using CodeIgniter 3 with MVC architecture</li>
+                                    <li>Implemented role-based admin panel for user management and document uploads</li>
+                                    <li>Optimized MySQL queries and implemented pagination for news listing and search</li>
+                                    <li>Collaborated with client to deliver site aligned with their communication goals</li>
+                                </ul>
+                                <div class="project-stack">
+                                    <span>PHP</span><span>CodeIgniter</span><span>MySQL</span><span>Bootstrap</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;highlights&gt;</span>
+                <h2 class="section-title">Key Highlights</h2>
+            </div>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-icon"><i class="fas fa-landmark"></i></div>
+                    <h3>Enterprise Banking</h3>
+                    <p>Built production-grade systems at Indonesia largest bank (BRI) serving millions of customers across digital platforms.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>Microservices Architecture</h3>
+                    <p>Designed and implemented distributed microservices with gRPC, message queues, and event-driven patterns.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Financial Systems</h3>
+                    <p>Developed secure financial calculation engines and onboarding systems compliant with banking regulations.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>85%+ Test Coverage</h3>
+                    <p>Achieved over 85% unit test coverage using Go testing and Testify, ensuring reliability in critical services.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    <h3>Performance Optimization</h3>
+                    <p>Optimized code, queries, and architectures to improve system performance and scalability.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon"><i class="fas fa-users"></i></div>
+                    <h3>Agile Collaboration</h3>
+                    <p>Active participant in Scrum ceremonies, code reviews, and cross-functional team collaboration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;certifications&gt;</span>
+                <h2 class="section-title">Licenses and Certifications</h2>
+            </div>
+            <div class="certs-grid">
+                <div class="cert-card">
+                    <div class="cert-badge"><i class="fas fa-linux"></i></div>
+                    <h4>CompTIA Linux+ ce</h4>
+                    <p>CompTIA</p>
+                    <span class="cert-year">2022</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-badge"><i class="fas fa-lock"></i></div>
+                    <h4>Cyber Security (Linux+)</h4>
+                    <p>Digital Talent Scholarship</p>
+                    <span class="cert-year">2022</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-badge"><i class="fab fa-aws"></i></div>
+                    <h4>Cloud Practitioner Essentials</h4>
+                    <p>Dicoding Indonesia</p>
+                    <span class="cert-year">2022</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-badge"><i class="fas fa-server"></i></div>
+                    <h4>Back-End App for Beginners</h4>
+                    <p>Dicoding Indonesia</p>
+                    <span class="cert-year">2022</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-badge"><i class="fab fa-js-square"></i></div>
+                    <h4>JavaScript Fundamentals</h4>
+                    <p>Dicoding Indonesia</p>
+                    <span class="cert-year">2022</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-badge"><i class="fas fa-code"></i></div>
+                    <h4>Intro to Fullstack Developer</h4>
+                    <p>Digital Talent Scholarship</p>
+                    <span class="cert-year">2021</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-badge"><i class="fas fa-cubes"></i></div>
+                    <h4>SOLID Principles</h4>
+                    <p>Dicoding Indonesia</p>
+                    <span class="cert-year">2021</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p class="contact-lead">
+                        I am always open to discussing new projects, creative ideas,
+                        or opportunities to be part of your vision. Let us connect!
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:chirzul@proton.me" class="contact-link">
+                            <div class="contact-link-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span class="contact-link-label">Email</span>
+                                <span class="contact-link-value">chirzul@proton.me</span>
+                            </div>
+                        </a>
+                        <a href="tel:+6282242861274" class="contact-link">
+                            <div class="contact-link-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <span class="contact-link-label">Phone</span>
+                                <span class="contact-link-value">+62 822-4286-1274</span>
+                            </div>
+                        </a>
+                        <a href="https://linkedin.com/in/chirzulmaula" target="_blank" rel="noopener" class="contact-link">
+                            <div class="contact-link-icon"><i class="fab fa-linkedin"></i></div>
+                            <div>
+                                <span class="contact-link-label">LinkedIn</span>
+                                <span class="contact-link-value">/in/chirzulmaula</span>
+                            </div>
+                        </a>
+                        <div class="contact-link">
+                            <div class="contact-link-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <span class="contact-link-label">Location</span>
+                                <span class="contact-link-value">Jakarta, Indonesia</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-terminal">
+                    <div class="terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="terminal-title">contact.sh</span>
+                        </div>
+                        <div class="terminal-body">
+                            <p><span class="t-prompt">$</span> <span class="t-cmd">./send_message.sh</span> --to chirzul</p>
+                            <p class="t-output t-success">Initializing secure connection...</p>
+                            <p class="t-output t-success">Ready to receive your message</p>
+                            <p class="t-output t-success">Response time: less than 24 hours</p>
+                            <br>
+                            <p><span class="t-prompt">$</span> <span class="t-cmd">cat</span> /etc/motd</p>
+                            <p class="t-output t-highlight">"Let us build something great together."</p>
+                            <br>
+                            <p><span class="t-prompt">$</span> <span class="t-cmd">open</span> <a href="mailto:chirzul@proton.me" class="t-link">mailto:chirzul@proton.me</a></p>
+                            <p><span class="t-prompt">$</span> <span class="t-cmd">open</span> <a href="https://linkedin.com/in/chirzulmaula" target="_blank" class="t-link">linkedin.com/in/chirzulmaula</a></p>
+                            <p><span class="t-prompt">$</span> <span class="t-cursor-blink">_</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <span class="footer-logo">&lt;CM/&gt;</span>
+                    <p>Muhammad Chirzul Maula</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/chirzulmaula" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:chirzul@proton.me"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+6282242861274"><i class="fas fa-phone"></i></a>
+                </div>
+                <p class="footer-copy">2025 Chirzul Maula. Crafted with code and Go.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
